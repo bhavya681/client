@@ -1,10 +1,12 @@
 // vite.config.js
 import { defineConfig } from 'vite';
+import externalImport from 'vite-plugin-external-import';
 
 export default defineConfig({
-  build: {
-    rollupOptions: {
-      external: ['mongoose'], // Externalize mongoose
-    },
-  },
+  plugins: [
+    externalImport({
+      // Exclude mongoose from being processed by Vite
+      exclude: ['mongoose'],
+    }),
+  ],
 });
