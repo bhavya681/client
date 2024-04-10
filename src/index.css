@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* CustomCarousel.css */
+.custom-carousel .carousel .control-prev,
+.custom-carousel .carousel .control-next {
+  background-color: rgba(0, 0, 0, 0.5); /* Set background color for arrows */
+  border-radius: 50%; /* Make arrows circular */
+  width: 60px; /* Set width of arrows */
+  height: 80px; /* Set height of arrows */
+  top: calc(50% - 20px); /* Position arrows vertically centered */
+}
+
+.custom-carousel .carousel .control-prev {
+  left: 10px; /* Position left arrow */
+}
+
+.custom-carousel .carousel .control-next {
+  right: 10px; /* Position right arrow */
+}
+
+.custom-carousel .carousel .control-prev:before,
+.custom-carousel .carousel .control-next:before {
+  font-size: 64px; /* Set arrow icon size */
+}
+
+.custom-carousel .carousel .control-arrow:before {
+  color: white; /* Set color of arrow icons */
+}
+
+.custom-carousel .carousel .control-prev:hover,
+.custom-carousel .carousel .control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Change background color on hover */
+}
